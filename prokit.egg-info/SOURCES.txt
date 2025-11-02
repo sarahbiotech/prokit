@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+prokit/__init__.py
+prokit/protein.py
+prokit.egg-info/PKG-INFO
+prokit.egg-info/SOURCES.txt
+prokit.egg-info/dependency_links.txt
+prokit.egg-info/requires.txt
+prokit.egg-info/top_level.txt

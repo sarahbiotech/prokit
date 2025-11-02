@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: prokit
+Version: 0.1.2
+Summary: Lightweight Python library to fetch and analyze protein sequences from UniProt.
+Home-page: https://github.com/yourusername/prokit
+Author: Sarah Ali
+Author-email: alsayedsarah01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.30
+Requires-Dist: pandas>=2.0
+Requires-Dist: ipython>=8.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ProKit (Protein Analysis Library)
+
+ProKit is a Python library to fetch and analyze protein sequences from UniProt.  
+It calculates molecular weight, hydrophobic ratio, and displays results in a neat, organized table.
+
+---
+
+## Installation
+
+Install from PyPI:
+
+
+pip install prokit
+from prokit import Protein
+
+# Create a Protein object by specifying the protein name
+p = Protein.from_name("Hemoglobin subunit beta")
+
+# Show summary table
+p.show_summary()  # Displays Name, Organism, Length, Molecular Weight, Hydrophobic Ratio
+
+## Available Properties and Methods
+
+| Property / Method       | Description                                     |
+|-------------------------|-------------------------------------------------|
+| `p.sequence`            | Full protein sequence as a string              |
+| `p.name`                | Protein name                                   |
+| `p.organism`            | Source organism of the protein                 |
+| `p.molecular_weight()`  | Calculates and returns the molecular weight   |
+| `p.hydrophobic_ratio()` | Calculates and returns the fraction of hydrophobic residues |
+
+
+# License
+
+MIT License – Free to use, modify, and distribute with attribution to the original author.
+
+# Author
+
+Sarah Ali – alsayedsarah01@gmail.com
+
+GitHub: https://github.com/sarahbiotech/prokit
