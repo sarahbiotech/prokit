@@ -1,14 +1,14 @@
 
-Project description
-
+Project description:
 ProKit (Protein Analysis Library)
 ProKit is a Python library to fetch and analyze protein sequences from UniProt.
 It calculates molecular weight, hydrophobic ratio, and displays results in a neat, organized table.
 
-Installation
-Install from PyPI:
+Installation: 
+Install from PyPI
 
-pip install prokit from prokit import Protein
+pip install prokit
+from prokit import Protein
 
 Create a Protein object by specifying the protein name
 p = Protein.from_name("Hemoglobin subunit beta")
